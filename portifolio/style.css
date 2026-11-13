@@ -1,0 +1,26 @@
+html { scroll-behavior: smooth; }
+
+section {
+  min-height: 100vh;
+  padding-top: 90px !important;
+}
+
+.card-projeto {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-projeto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
